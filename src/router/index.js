@@ -1,3 +1,4 @@
+import 'vue-loading-overlay/dist/css/index.css';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -16,6 +17,12 @@ const routes = [
     name: 'TV',
     component: () => import('../views/TvView.vue'),
   },
+  {
+  path: '/filme/:filmeId',
+  name: 'MovieDetails',
+  component: () => import('../views/MovieDetailsView.vue'),
+  props: true,
+},
 ];
 
 const router = createRouter({
