@@ -17,13 +17,16 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
 header {
-  height: 3rem;
+  height: 8rem;
   display: flex;
-  background-color: black;
+  background-color: #000;
   color: #fff;
   font-size: 1.2rem;
   padding-left: 2rem;
+
 }
+
+
 
 nav {
   column-gap: 2rem;
@@ -33,7 +36,12 @@ nav {
 }
 
 nav a {
+  margin: 0 0 0 17vw;
   text-decoration: none;
-  color: #fff;
+  color: #e2620c;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
+
 </style>
