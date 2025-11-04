@@ -30,7 +30,9 @@
   const response = await api.get('discover/movie', {
     params: {
       with_genres: genreId,
+      with_keywords: 155573 || 15662 || 340029 || 305941 || 197125 || 215686 || 254500 || 222835 || 222934 || 168422 || 168713 || 256930 || 227264 || 177703 || 178402 || 271626 || 237964 || 155291 || 287407 || 168418 || 238520 || 309147,
       language: 'pt-BR',
+      sort_by: 'popularity.desc',
     },
   });
   movies.value = response.data.results;
